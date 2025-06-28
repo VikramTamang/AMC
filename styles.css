@@ -1,0 +1,1437 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.btn-secondary {
+    background-color: #f8fafc;
+    color: #3b82f6;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #3b82f6;
+    border: 2px solid #3b82f6;
+}
+
+.btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline-white:hover {
+    background-color: white;
+    color: #3b82f6;
+}
+
+.btn-lg {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-brand a {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #3b82f6;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 600px;
+    background-image: url("https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&h=600&fit=crop");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Service Times */
+.service-times {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 4rem 0;
+}
+
+.welcome-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.welcome-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.welcome-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Events Section */
+.events-section {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.events-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.event-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 1.5rem;
+}
+
+.event-date {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.event-content h3 {
+    margin-bottom: 1rem;
+}
+
+.event-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 0;
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+}
+
+.cta-section i {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Page Header */
+.page-header {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 4rem 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.mission-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.values-list li::before {
+    content: "•";
+    color: #3b82f6;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.leadership-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.leader-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.leader-content {
+    padding: 1.5rem;
+}
+
+.leader-role {
+    color: #3b82f6;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Join Section */
+.join-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.join-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.join-section>p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-to-expect {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* History Styles */
+.beginnings-section {
+    padding: 4rem 0;
+}
+
+.beginnings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.beginnings-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.beginnings-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.beginnings-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Timeline Styles */
+.timeline-section {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.timeline-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e5e7eb;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    background-color: #3b82f6;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin: 0 2rem;
+    flex: 1;
+}
+
+.timeline-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+/* Legacy Section */
+.legacy-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.legacy-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.legacy-section>p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historic-photos {
+    margin-top: 2rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historic-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.historic-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Members Page Styles */
+.members-section {
+    padding: 4rem 0;
+}
+
+.tabs {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.tab-btn {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tab-intro h2 {
+    margin-bottom: 1rem;
+}
+
+.tab-intro p {
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ministries Grid */
+.ministries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.ministry-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ministry-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ministry-content {
+    padding: 1.5rem;
+}
+
+.ministry-content h3 {
+    margin-bottom: 1rem;
+}
+
+.ministry-content p {
+    margin: 0;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info h3 {
+    margin-bottom: 0.25rem;
+}
+
+.member-since {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: #666;
+    margin: 0;
+}
+
+.share-story {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.share-story h3 {
+    margin-bottom: 1rem;
+}
+
+.share-story p {
+    margin-bottom: 1.5rem;
+}
+
+/* Membership Steps */
+.membership-steps {
+    margin-bottom: 3rem;
+}
+
+.step-card {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+    background-color: #3b82f6;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.step-content h3 {
+    margin-bottom: 1rem;
+}
+
+.step-content p {
+    margin-bottom: 1rem;
+}
+
+.step-detail {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 0;
+}
+
+.membership-cta {
+    background-color: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.membership-cta p {
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Forms */
+.contact-form,
+.donation-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Success Message */
+.success-message {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.success-content {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.success-content i {
+    font-size: 4rem;
+    color: #10b981;
+    margin-bottom: 1rem;
+}
+
+.success-content h3 {
+    margin-bottom: 1rem;
+}
+
+/* Info Cards */
+.info-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: #3b82f6;
+    margin-top: 0.25rem;
+}
+
+.info-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-card a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+.info-card small {
+    display: block;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* Prayer Section */
+.prayer-section {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.prayer-section h2 {
+    margin-bottom: 1rem;
+}
+
+.prayer-section p {
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prayer-email {
+    color: #3b82f6;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.prayer-email:hover {
+    text-decoration: underline;
+}
+
+/* Donation Styles */
+.donation-section {
+    padding: 4rem 0;
+}
+
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.donation-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.donation-form {
+    margin: 0;
+    box-shadow: none;
+}
+
+.amount-section {
+    margin-bottom: 2rem;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.amount-btn {
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+    border-color: #3b82f6;
+    background-color: #3b82f6;
+    color: white;
+}
+
+.custom-amount {
+    margin-top: 1rem;
+}
+
+.input-with-symbol {
+    position: relative;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-with-symbol input {
+    padding-left: 2rem;
+}
+
+.frequency-section,
+.payment-section {
+    margin-bottom: 2rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.radio-option input[type="radio"]:checked+.radio-custom {
+    border-color: #3b82f6;
+}
+
+.radio-option input[type="radio"]:checked+.radio-custom::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.payment-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #e5e7eb;
+}
+
+.payment-tab {
+    padding: 12px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.payment-tab:hover,
+.payment-tab.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.payment-content {
+    margin-top: 1rem;
+}
+
+.qr-code-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.qr-code-section img {
+    margin-bottom: 1rem;
+}
+
+/* Impact Section */
+.impact-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.impact-card,
+.other-ways-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.impact-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.impact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.impact-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.impact-list i {
+    color: #3b82f6;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.impact-list strong {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.giving-option {
+    margin-bottom: 1.5rem;
+}
+
+.giving-option:last-child {
+    margin-bottom: 0;
+}
+
+.giving-option strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.tax-info {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.tax-info h3 {
+    margin-bottom: 1rem;
+}
+
+/* Thank You Section */
+.thank-you-section {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.thank-you-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-section p {
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8fafc;
+    padding: 3rem 0 1rem;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #3b82f6;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-bottom p {
+    color: #666;
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+    color: #666;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-top: 1px solid #e5e7eb;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-grid,
+    .mission-grid,
+    .beginnings-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-grid,
+    .donation-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .amount-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .payment-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+    }
+
+    .timeline-year {
+        position: absolute;
+        left: 0;
+        min-width: 60px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .timeline-content {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .step-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ministries-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+
+    .amount-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}

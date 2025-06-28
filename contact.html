@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grace Community Church</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Grace Community Church</a>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="history.html" class="nav-link">History</a>
+                <a href="members.html" class="nav-link">Members</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Reach out with any questions, prayer requests, or to learn more about our
+                church community.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-section">
+                    <h2>Get in Touch</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <div class="success-content">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been received. We'll get back to you as soon as possible.</p>
+                            <button class="btn btn-primary" onclick="resetForm()">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Church Information</h2>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Faith Street<br>Graceville, CA 90210</p>
+                            <a href="https://maps.google.com" target="_blank">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                            <small>Monday-Friday: 9:00 AM - 5:00 PM</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@gracechurch.org">info@gracechurch.org</a>
+                            <small>We aim to respond within 24-48 hours</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Service Times</h3>
+                            <p>Sunday: 9:00 AM & 11:00 AM<br>
+                                Wednesday Bible Study: 7:00 PM<br>
+                                Friday Prayer: 6:30 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Requests -->
+    <section class="prayer-section">
+        <div class="container">
+            <h2>Prayer Requests</h2>
+            <p>We believe in the power of prayer. If you have a specific prayer request, please submit it using the form
+                above or contact our prayer team directly.</p>
+            <a href="mailto:prayer@gracechurch.org" class="prayer-email">prayer@gracechurch.org</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Grace Community Church</h3>
+                    <p>A place of worship, community, and faith where everyone is welcome.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="members.html">Members</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Service Times</h3>
+                    <ul>
+                        <li>Sunday: 9:00 AM & 11:00 AM</li>
+                        <li>Wednesday: 7:00 PM</li>
+                        <li>Friday Prayer: 6:30 PM</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <address>
+                        <p>123 Faith Street</p>
+                        <p>Graceville, CA 90210</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grace Community Church. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
