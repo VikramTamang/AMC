@@ -158,7 +158,7 @@ p {
 .hero {
     position: relative;
     height: 600px;
-    background-image: url("image/AMC_img2.jpg");
+    background-image: url("image/Abhishek_Family.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -408,44 +408,50 @@ p {
 }
 
 /* Leadership Section */
-.leadership-section {
-    padding: 4rem 0;
-    background-color: #f8fafc;
-}
+        .leadership-section {
+            padding: 4 remorse 0;
+            background-color: #f8fafc;
+        }
 
-.leadership-section h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-}
+        .leadership-section h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
 
-.leadership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
 
-.leader-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
+        .leader-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
 
-.leader-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+        .leader-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
 
-.leader-content {
-    padding: 1.5rem;
-}
+        .leader-content {
+            padding: 1.5rem;
+        }
 
-.leader-role {
-    color: #3b82f6;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
+        .leader-role {
+            color: #3b82f6;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
 /* Join Section */
 .join-section {
